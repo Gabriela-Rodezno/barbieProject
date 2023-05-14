@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+h1 {
+    font-family: 'Barbie', sans-serif;
+    color: white;
+    background-color: rgb(222, 28, 133);
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Barbie', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(222, 28, 133);
+}
+
+.form_container{
+    font-family: HelveticaNeue,sans-serif;
+    margin-top: 20px;
+    width: 40vw;
+    border-radius: 10px;
+    height: 80vh;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+form button{
+    padding: 10px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.add_div{
+    width: 100%;
+    padding: 10px 0px 0px 90px;
+}
+
+.add_div button{
+    padding: 9px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border-radius: 7px;
+}
+
+.add_div button:hover{
+    background-color: rgb(222, 28, 133);
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table button{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+table .edit{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+table .delete{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.update_form, .create_form{
+    display: none;
+}

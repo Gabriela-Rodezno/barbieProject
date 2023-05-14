@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta barbieCarreer="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie Shop</title>
+    <link rel="stylesheet" href="barbieShop.css">
+    <link href="https://fonts.cdnfonts.com/css/barbie" rel="stylesheet">
+</head>
+<body onload="readAll()">
+    <h1>Barbie Shop</h1>
+    <h2>You can be Anything</h2>
+    <div class="container">
+        <div class="form_container">
+            <form class="create_form">
+                <input type="text" class="barbieCarreer" placeholder="New Barbie Carreer Type">
+                <input type="color" class="color"placeholder="Enter Color">
+                <button type="button" onclick="add()">Create</button>
+            </form>
+            <form class="update_form">
+                <input type="text" hidden class="id">
+                <input type="text" class="ubarbieCarreer"/>
+                <input type="color" class="ucolor"/>
+                <button type="button" onclick="update()">Update</button>
+            </form>
+            <div class="add_div">
+                <button onclick="create()">Add +</button>
+            </div>
+            <table>
+                <thead>
+                    <th>Barbie Carreer Type</th>
+                    <th>Color</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="data_table">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/barbieShop.js"></script>
+</body>
+</html>
