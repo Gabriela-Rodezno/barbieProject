@@ -52,14 +52,14 @@ function edit(id){
     document.querySelector('.update_form').style.display = "block";
     var obj = data.find(rec => rec.id === id);
     document.querySelector('.ubarbieCarreer').value = obj.barbieCarreer;
-    document.querySelector('.ucolor').value = obj.color;
+    document.querySelector('.uColor').value = obj.color;
     document.querySelector('.id').value = obj.id;
 }
 
 function update(){
     var id = parseInt(document.querySelector('.id').value);
     var barbieCarreer = document.querySelector('.ubarbieCarreer').value;
-    var color = document.querySelector('.ucolor').value;
+    var color = document.querySelector('.uColor').value;
 
     var index = data.findIndex(rec => rec.id === id);
     data[index] = {id, barbieCarreer, color};
